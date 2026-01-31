@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="window">
+        <div id="container">
+            <div id="weather_box">
+                <div id="weather_heading">
+                    <h1>Weather Forecast</h1>
+                </div>
+                <div id="first_section">
+                    <div id="search_section">
+                        <div id="search">
+                            <input type="text" , placeholder="Enter City Name">
+                        </div>
+                        <div id="search_button">
+                            <button>Search</button>
+                        </div>
+                        <div id="location_button">
+                            <img src="Assets/Images/location.png" alt="Location" id="location_icon"
+                                title="Use Current Location">
+                        </div>
+                    </div>
+                </div>
+                <div id="error">
+                    <p>Invalid City Name!</p>
+                </div>
+                <div id="loading">
+                    <div class="spinner"></div>
+                </div>
+                <div id="second_section">
+                    <div id="first_half">
+                        <div id="temperature">
+                            <p id="temp"></p>
+                        </div>
+                        <div id="city">
+                            <p id="city_name"></p>
+                        </div>
+                    </div>
+                    <div id="second_half">
+                        <div id="weather_type">
+                            <div id="weather_type_icon">
+                                <img id="weather_icon" alt="Weather Icon">
+                            </div>
+                            <p class="font_size" id="weather"></p>
+                        </div>
+                        <div id="other_parameters">
+                            <div>
+                                <span><img src="Assets/Images/wind.png" alt="Wind"></span><span
+                                    class="font_size">Wind</span><span class="font_size" id="wind"></span>
+                            </div>
+                            <div>
+                                <span><img src="Assets/Images/humidity.png" alt="Humidity"></span><span
+                                    class="font_size">Humidity</span><span class="font_size" id="humidity"></span>
+                            </div>
+                            <div>
+                                <span><img src="Assets/Images/thermometer.png" alt="Thermometer"></span><span
+                                    class="font_size">Feels Like</span><span class="font_size" id="feels_like"></span>
+                            </div>
+                            <div>
+                                <span><img src="Assets/Images/sunrise.png" alt="Sunrise"></span><span
+                                    class="font_size">Sunrise</span><span class="font_size" id="sunrise"></span>
+                            </div>
+                            <div>
+                                <span><img src="Assets/Images/sunset.png" alt="Sunset"></span><span
+                                    class="font_size">Sunset</span><span class="font_size" id="sunset"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
